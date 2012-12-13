@@ -1,0 +1,817 @@
+/*
+Responsive CSS3 Data Grids v1.0 (06.2012)
+Copyright 2012 QuanticaLabs
+www.quanticalabs.com
+*/
+
+/* ==================== CSS DEFAULTS ==================== */
+
+table.qlabs_grid_container img
+	{
+	border: 0 !important;
+	}
+	
+table.qlabs_grid_container ul
+	{
+	margin: 0px !important;
+	padding: 0px 0px 0px 14px !important;
+	list-style-type: square !important;
+	}
+	
+table.qlabs_grid_container ol
+	{
+	margin: 0px !important;
+	padding: 0px 0px 0px 18px !important;
+	}
+	
+table.qlabs_grid_container li
+	{
+	margin: 0px !important;
+	padding: 0px !important;
+	}
+
+/* ==================== TABLE CONTAINER ==================== */
+/* --- Data Grids --- */
+table.qlabs_grid_container
+	{
+	width: 100%; /* --- Overall Table Width --- */
+	max-width: 960px; /* --- Overall Table Max Width --- */
+	height: 100%;
+	border-collapse: collapse;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: normal !important;
+	font-family: arial, sans-serif !important; /* Base Font Family */
+	font-size: 12px !important; /* Base Font Size */
+	background: #ffffff;
+	border: 1px solid #c5c5c5;
+	color: #444444 !important; /* Base Font Color */
+	
+	/* CSS3 Box-Shadow */
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.05);
+    box-shadow:  3px 3px 0px 0px rgba(0, 0, 0, 0.05);
+	}
+	
+table.qlabs_grid_container td
+	{
+	padding: 0 !important;
+	}
+
+/* ==================== TABLE HEADER ==================== */
+/* --- Header Row --- */
+table.qlabs_grid_container thead tr.header_row
+	{
+	height: 40px;	/* Header Row Height */
+	border-top: 1px solid #c5c5c5;
+	border-bottom: 1px solid #b5b5b5;
+
+	/* CSS3 Gradients */
+	background: #e8e8e8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e8e8e8 0%, #dcdcdc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8e8e8), color-stop(100%,#dcdcdc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e8e8e8 0%,#dcdcdc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e8e8e8 0%,#dcdcdc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e8e8e8 0%,#dcdcdc 100%); /* IE10+ */
+	background: linear-gradient(top,  #e8e8e8 0%,#dcdcdc 100%); /* W3C */
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImcxMzIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNFOEU4RTgiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNEQ0RDREMiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2cxMzIpIiAvPgo8L3N2Zz4=); /* SVG IE9 */ 
+	}
+	
+/* --- Header Cell --- */
+table.qlabs_grid_container thead tr.header_row td.header_cell
+	{
+	padding: 6px 8px 6px 8px !important;
+	
+	/* CSS3 Box-Shadow */
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+	}
+	
+table.qlabs_grid_container thead tr.header_row td.header_cell h2.table_header
+	{
+	margin: 0px !important;
+	padding: 6px 0px 6px 0px !important;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: georgia, serif !important;
+	float: left;
+	color: #000000;
+	text-shadow: 0px 1px 0px #ffffff;
+	}
+	
+/* ==================== TABLE COLUMN FILTERING ==================== */
+/* --- Table Column Filtering Button --- */
+table.qlabs_grid_container thead tr.header_row td.header_cell label.table_config
+	{
+	float: right;
+	white-space: nowrap;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+    padding: 6px 8px 6px 8px !important;
+    font-size: 11px;
+    font-weight: bold;
+	
+	/* CSS3 Gradients */
+	background-color: #efefef;
+	background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.85) 0%, rgba(239,239,239,0) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.85)), color-stop(100%,rgba(239,239,239,0))); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* IE10+ */
+	background-image: linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* W3C */
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRkNGQ0ZDIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjRUZFRkVGIiBvZmZzZXQ9IjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnOSkiIC8+Cjwvc3ZnPg==); /* SVG IE9 */
+	
+    border-color: #d5d5d5 #d5d5d5 #bcbcbc;
+    -webkit-border-radius: 4px;
+	border-radius: 4px; 
+    border-style: solid;
+    border-width: 1px;
+	
+	/* CSS3 Box-Shadow */
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+	
+	color: #444444;
+    text-shadow: 0px 1px 0px #ffffff;
+	line-height: 150% !important;
+	}
+	
+table.qlabs_grid_container thead tr.header_row td.header_cell input
+	{
+	/* IE fix */
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity=0); /* IE filter */
+	outline: none;
+	}
+
+/* --- Table Column Filtering Panel --- */	
+table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config
+	{
+	height: 168px;
+	min-width: 140px;
+	padding: 8px 24px 8px 8px;
+	background: #ffffff;
+	border: 1px solid #c5c5c5;
+	position: absolute;
+	right: 0;
+	top: 43px;
+	display: none;
+	overflow: auto;
+	z-index: 1000 !important;
+	}
+
+/* --- Table Column Filtering Panel Header --- */
+table.qlabs_grid_container thead tr.header_row td.header_cell h3.table_config
+	{
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: georgia, serif !important;
+	color: #000000;
+	text-shadow: 0px 1px 0px #ffffff;
+	}
+	
+/* --- Table Column Filtering Rows --- */
+table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul
+	{
+	list-style-type: none !important;	
+	margin: 0px !important;
+	padding: 0px !important;
+	}
+	
+table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li
+	{
+	margin: 0px 0px 10px 0px !important;
+	padding: 0px !important;
+	}
+	
+table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li label
+	{
+	white-space: nowrap;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+    padding: 1px 10px 2px;
+    font-size: 11px;
+    font-weight: bold;
+	
+	/* CSS3 Gradients */
+	background-color: #efefef;
+	background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.85) 0%, rgba(239,239,239,0) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.85)), color-stop(100%,rgba(239,239,239,0))); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* IE10+ */
+	background-image: linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* W3C */
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRkNGQ0ZDIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjRUZFRkVGIiBvZmZzZXQ9IjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnOSkiIC8+Cjwvc3ZnPg==); /* SVG IE9 */
+	
+    border-color: #d5d5d5 #d5d5d5 #bcbcbc;
+    -webkit-border-radius: 4px;
+	border-radius: 4px; 
+    border-style: solid;
+    border-width: 1px;
+	
+	/* CSS3 Box-Shadow */
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+	
+	color: #444444;
+    text-shadow: 0px 1px 0px #ffffff;
+	line-height: 150% !important;
+	}
+	
+/* --- Action On Table Column Filtering Panel --- */
+table.qlabs_grid_container thead tr.header_row td.header_cell input[type='checkbox']:checked~div
+	{
+	display: block;
+	}
+	
+/* --- Action On Filter Buttons --- */
+/* --- Hide Inputs --- */
+input#col1,
+input#col2,
+input#col3,
+input#col4,
+input#col5,
+input#col6,
+input#col7,
+input#col8,
+input#col9,
+input#col10,
+input#col11,
+input#col12,
+input#col13,
+input#col14,
+input#col15,
+input#col16,
+input#col17,
+input#col18,
+input#col19,
+input#col20
+	{
+	/* IE fix */
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity=0); /* IE filter */
+	outline: none;
+	}
+
+/* --- Checked Checkbox --- */
+/* --- nth-of-type IE8 fix --- */
+input#col1[type='checkbox']:checked~table tbody tr td:first-child,
+input#col2[type='checkbox']:checked~table tbody tr td:first-child + td,
+input#col3[type='checkbox']:checked~table tbody tr td:first-child + td + td,
+input#col4[type='checkbox']:checked~table tbody tr td:first-child + td + td + td,
+input#col5[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td,
+input#col6[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td,
+input#col7[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td,
+input#col8[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td,
+input#col9[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td,
+input#col10[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td + td,
+input#col11[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td + td + td,
+input#col12[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td + td + td + td,
+input#col13[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td + td + td + td + td,
+input#col14[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td,
+input#col15[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td,
+input#col16[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td,
+input#col17[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td,
+input#col18[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td,
+input#col19[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td,
+input#col20[type='checkbox']:checked~table tbody tr td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td
+	{
+	display: none;
+	}
+	
+/* --- Bug Fix --- */	
+input#col1[type='checkbox']:checked~table tbody tr.expanded td:first-child
+	{
+	display: table-cell;
+	}
+	
+/* --- Unchecked Checkbox --- */
+/* --- nth-of-type IE8 fix --- */
+input#col1[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child label,
+input#col2[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li label,
+input#col3[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li label,
+input#col4[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li label,
+input#col5[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li label,
+input#col6[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li label,
+input#col7[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li label,
+input#col8[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li label,
+input#col9[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li label,
+input#col10[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li + li label,
+input#col11[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li + li + li label,
+input#col12[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li + li + li + li label,
+input#col13[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li label,
+input#col14[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li label,
+input#col15[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li label,
+input#col16[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li label,
+input#col17[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li label,
+input#col18[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li label,
+input#col19[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li label,
+input#col20[type='checkbox']:checked~table.qlabs_grid_container thead tr.header_row td.header_cell div.table_config ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li label
+	{
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* IE filter */
+	}
+
+/* ==================== TABLE SUBHEADER ==================== */
+/* --- Subheader Row --- */
+table.qlabs_grid_container tbody tr.subheader_row
+	{
+	font-weight: bold;
+	border-top: 1px solid #c5c5c5;
+	border-bottom: 1px solid #c5c5c5;
+	color: #000000;
+	text-shadow: 0px 1px 0px #ffffff;	
+	background: #f0f0f0;
+	}
+
+/* Subheader Cell */
+table.qlabs_grid_container tbody tr.subheader_row td.subheader_cell
+	{
+	padding: 8px !important;
+	line-height: 150% !important;
+	border-left: 1px solid #c5c5c5;
+	
+	/* CSS3 Box-Shadow */
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+	}
+	
+/* ==================== TABLE ROW ==================== */
+/* --- Even Row Background --- */	
+table.qlabs_grid_container tbody.data_container tr.data_even
+	{
+	background: #f5f5f5;
+	}
+
+/* --- Odd Row Background --- */	
+table.qlabs_grid_container tbody.data_container tr.data_odd
+	{
+	background: #ffffff;
+	}
+	
+/* ==================== TABLE CELL ==================== */
+/* --- Cell / Label Cell --- */
+table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell,
+table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell,
+table.qlabs_grid_container tbody.data_container tr.data_even td.label_cell,
+table.qlabs_grid_container tbody.data_container tr.data_odd td.label_cell
+	{
+	padding: 6px 8px 6px 8px !important;
+	line-height: 150% !important;
+	border-left: 1px solid #e5e5e5;
+	border-top: 0;
+	}
+	
+/* --- First Column Cell --- */	
+table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell:first-child,
+table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell:first-child
+	{
+	border-left: 1px solid #c5c5c5;
+	}
+	
+/* --- First Column Label Cell --- */
+table.qlabs_grid_container tbody.data_container tr.data_even td.label_cell,
+table.qlabs_grid_container tbody.data_container tr.data_odd td.label_cell
+	{
+	font-weight: bold;
+	border-left: 1px solid #c5c5c5;
+	border-right: 1px solid #c5c5c5;
+	background: #f0f0f0;
+	color: #000000;
+	text-shadow: 0px 1px 0px #ffffff;
+	
+	/* CSS3 Box-Shadow */
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff, inset 0px -1px 0px 0px #c5c5c5;
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff, inset 0px -1px 0px 0px #c5c5c5;
+    box-shadow: inset 0px 1px 0px 0px #ffffff, inset 0px -1px 0px 0px #c5c5c5;
+	}
+	
+/* ==================== TABLE BUTTONS ==================== */
+/* --- Button / Label --- */
+table.qlabs_grid_container tbody.data_container tr td.data_cell label,
+table.qlabs_grid_container tbody.data_container tr td.data_cell div.grid_button
+	{
+	display: inline-block;
+	white-space: nowrap;
+	cursor: pointer;
+	text-align: center;
+    padding: 1px 10px 2px;
+    font-size: 11px;
+    font-weight: bold;
+	
+	/* CSS3 Gradients */
+	background-color: #efefef;
+	background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.85) 0%, rgba(239,239,239,0) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.85)), color-stop(100%,rgba(239,239,239,0))); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* IE10+ */
+	background-image: linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(239,239,239,0) 100%); /* W3C */
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRkNGQ0ZDIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjRUZFRkVGIiBvZmZzZXQ9IjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnOSkiIC8+Cjwvc3ZnPg==); /* SVG IE9 */
+	
+    border-color: #d5d5d5 #d5d5d5 #bcbcbc;
+    -webkit-border-radius: 4px;
+	border-radius: 4px; 
+    border-style: solid;
+    border-width: 1px;
+	
+	/* CSS3 Box-Shadow */
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+	
+	color: #444444;
+    text-shadow: 0px 1px 0px #ffffff;
+	}
+	
+/* --- Label, Button, Tooltip Button - Hover And Highlight --- */
+table.qlabs_grid_container tbody.data_container tr.data_even:hover td.data_cell label,
+table.qlabs_grid_container tbody.data_container tr.data_odd:hover td.data_cell label,
+table.qlabs_grid_container tbody.data_container tr.highlighted td.data_cell label,
+table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell.highlighted label,
+table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell.highlighted label,
+table.qlabs_grid_container tbody.data_container tr.data_even:hover td.data_cell div.grid_button,
+table.qlabs_grid_container tbody.data_container tr.data_odd:hover td.data_cell div.grid_button,
+table.qlabs_grid_container tbody.data_container tr.highlighted td.data_cell div.grid_button,
+table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell.highlighted div.grid_button,
+table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell.highlighted div.grid_button,
+table.qlabs_grid_container tbody.data_container tr.subheader_row td.subheader_cell div.qlabs_tooltip:hover,
+table.qlabs_grid_container tbody.data_container tr.data_even:hover td.data_cell div.qlabs_tooltip,
+table.qlabs_grid_container tbody.data_container tr.data_odd:hover td.data_cell div.qlabs_tooltip,
+table.qlabs_grid_container tbody.data_container tr.highlighted td.data_cell div.qlabs_tooltip,
+table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell.highlighted div.qlabs_tooltip,
+table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell.highlighted div.qlabs_tooltip
+	{
+	font-size: 11px;
+	color: #ffffff;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.2);
+	
+	/* CSS3 Box-Shadow */
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 0 rgba(0, 0, 0, 0.03);
+	}
+	
+/* ==================== EXPANDED TABLE ROW ==================== */
+/* --- Expanded Row Hidden Input --- */
+table.qlabs_grid_container tbody.data_container tr.expanded td input
+	{
+	/* IE fix */
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity=0); /* IE filter */
+	outline: none;
+	}
+
+/* --- Expanded Row Collapsed --- */	
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded
+	{
+	background: #ffffff;
+	display: block;
+	width: 100%;
+	height: 0px;
+	opacity: 0;
+	line-height: 150%;
+	overflow: auto;
+
+	/* CSS3 transition */
+	-webkit-transition: all 0.25s cubic-bezier(0.35,0,0.35,1);
+	-moz-transition: all 0.25s cubic-bezier(0.35,0,0.35,1);
+	-o-transition: all 0.25s cubic-bezier(0.35,0,0.35,1);
+	-ms-transition: all 0.25s cubic-bezier(0.35,0,0.35,1);
+	transition: all 0.25s cubic-bezier(0.35,0,0.35,1);
+	}
+	
+/* --- Expanded Row OnPress Action To Expand --- */	
+table.qlabs_grid_container tbody.data_container tr.expanded td input[type='checkbox']:checked~div.expanded,
+table.qlabs_grid_container tbody.data_container tr.expanded td input[type='radio']:checked~div.expanded,
+table.qlabs_grid_container tbody.data_container tr.expanded td input[type='checkbox'].checked~div.expanded,
+table.qlabs_grid_container tbody.data_container tr.expanded td input[type='radio'].checked~div.expanded
+	{
+	display: block;
+	width: 100%;
+	height: 160px;	/* Expandable section height */
+	opacity: 1;
+	border-bottom: 1px solid #c5c5c5;
+	}
+	
+/* --- Expanded Row Columns --- */
+/* --- 100% Width Column --- */
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_100
+	{
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+	display: block;
+	float: left;
+	padding: 10px 0px 10px 0px;
+	}
+
+/* --- 50% Width Column --- */	
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_50
+	{
+	width: 47%;
+	margin-left: 2%;
+	margin-right: 1%;
+	display: block;
+	float: left;
+	padding: 10px 0px 10px 0px;
+	}
+	
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_50:last-child
+	{
+	width: 47%;
+	margin-left: 1%;
+	margin-right: 2%;
+	}
+	
+/* --- 33% Width Column --- */	
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_33
+	{
+	width: 30%;
+	margin-left: 2%;
+	margin-right: 2%;
+	display: block;
+	float: left;
+	padding: 10px 0px 10px 0px;
+	}
+	
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_33:first-child
+	{
+	width: 31%;
+	margin-left: 2%;
+	margin-right: 0px;
+	}
+	
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_33:last-child
+	{
+	width: 31%;
+	margin-left: 0px;
+	margin-right: 2%;
+	}
+	
+/* --- Expanded Headers --- */
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded h3.expanded_header
+	{
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: georgia, serif !important;
+	color: #000000;
+	text-shadow: 0px 1px 0px #ffffff;
+	}
+	
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded h4.expanded_header
+	{
+	margin: 0px;
+	padding: 8px;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: georgia, serif !important;
+	color: #000000;
+	text-shadow: 0px 1px 0px #ffffff;
+	background: #f5f5f5;
+	}
+	
+/* --- Expanded Paragraph --- */
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded p
+	{
+	margin: 4px 0px 4px 0px !important;
+	padding: 0px !important;
+	}
+	
+/* --- Expanded List --- */
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_100 ul,
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_50 ul,
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_33 ul
+	{
+	list-style-type: none !important;
+	padding: 0px 8px 0px 8px !important;
+	margin: 0px !important;
+	}
+	
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_100 ul li,
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_50 ul li,
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_33 ul li
+	{
+	height: 20px !important;
+	padding: 6px 0px 5px 0px !important;
+	margin: 0px !important;
+	border-bottom: 1px solid #e0e0e0;
+	}	
+	
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_100 ul li span.right,
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_50 ul li span.right,
+table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_33 ul li span.right
+	{
+	float: right;
+	}
+	
+/* ==================== RESPONSIVE LAYOUT ==================== */
+/* --- Smaller than standard 960 --- */
+@media only screen and (max-width: 960px),
+(min-device-width: 768px) and (max-device-width: 959px)
+	{
+	table.qlabs_grid_container
+		{
+		width: 768px; /* --- Overall Table Width --- */
+		}
+	}
+
+/* --- Mobile Devices 480 - 768px --- */
+@media only screen and (max-width: 768px),
+(min-device-width: 480px) and (max-device-width: 767px)
+	{
+	table.qlabs_grid_container
+		{
+		width: 480px; /* --- Overall Table Width --- */
+		}
+	}
+	
+/* --- Mobile Devices Up To 480px --- */
+@media only screen and (max-width: 480px),
+(min-device-width: 0px) and (max-device-width: 479px)
+	{
+	table.qlabs_grid_container
+		{
+		width: 360px; /* --- Overall Table Width --- */
+		}
+	
+	/* --- Change Apperance --- */
+	table,
+	thead,
+	tbody,
+	tr,
+	td
+		{ 
+		display: block;
+		}
+		
+	/* --- Cell Works Like A Row --- */	
+	table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell,
+	table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell,
+	table.qlabs_grid_container tbody.data_container tr.data_even td.label_cell,
+	table.qlabs_grid_container tbody.data_container tr.data_odd td.label_cell
+		{
+		padding: 6px 8px 6px 8px !important;
+		line-height: 150% !important;
+		border-top: 0;
+		position: relative;
+		}
+		
+	/* --- Header Row --- */
+	table.qlabs_grid_container thead tr.header_row
+		{
+		border-top: 0px;
+		height: 43px;
+		}
+		
+	/* --- Disable Subheader Row --- */	
+	table.qlabs_grid_container tbody tr.subheader_row,
+	table.qlabs_grid_container tbody tr.subheader_row td.subheader_cell
+		{ 
+		display: none;
+		}
+
+	/* --- Remove Redundant Borders --- */
+	table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell,
+	table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell,
+	table.qlabs_grid_container tbody.data_container tr.data_even td.label_cell,
+	table.qlabs_grid_container tbody.data_container tr.data_odd td.label_cell,
+	table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell:first-child,
+	table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell:first-child,
+	table.qlabs_grid_container tbody.data_container tr.data_even:hover td.data_cell,
+	table.qlabs_grid_container tbody.data_container tr.data_odd:hover td.data_cell,
+	table.qlabs_grid_container tbody.data_container tr.highlighted td.data_cell
+		{
+		border-left: 0px !important;
+		border-right: 0px !important;
+		}
+		
+	/* --- Remove Tooltips --- */
+	div.qlabs_tooltip
+		{
+		display: none !important;
+		}
+		
+	/* --- 50% Width Column Turn Into 100% Width Column --- */	
+	table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_50
+		{
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+		float: left;
+		padding: 10px 0px 10px 0px;
+		display: block;
+		}
+	
+	table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_50:last-child
+		{
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+		float: left;
+		padding: 10px 0px 10px 0px;
+		display: block;
+		}
+	
+	/* --- 33% Width Column Turn Into 100% Width Column --- */	
+	table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_33
+		{
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+		float: left;
+		padding: 10px 0px 10px 0px;
+		display: block;
+		}
+	
+	table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_33:first-child
+		{
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+		float: left;
+		padding: 10px 0px 10px 0px;
+		display: block;
+		}
+	
+	table.qlabs_grid_container tbody.data_container tr.expanded td div.expanded .column_33:last-child
+		{
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+		float: left;
+		padding: 10px 0px 10px 0px;
+		display: block;
+		}
+		
+	/* --- Column Labels --- */
+	/* --- Use The Same Labels As In HTML Document --- */
+	td:before
+		{
+		padding-right: 8px; 
+		white-space: nowrap;
+		}
+		
+	td.data_cell:before,
+	td.label_cell:before
+		{
+		font-weight: bold;
+		color: #000000;
+		}
+
+	td.data_cell:nth-of-type(1):before,
+	td.label_cell:nth-of-type(1):before
+		{
+		content: "Model:";
+		}
+			
+	td.data_cell:nth-of-type(2):before,
+	td.label_cell:nth-of-type(2):before
+		{
+		content: "Price:";
+		}
+			
+	td.data_cell:nth-of-type(3):before,
+	td.label_cell:nth-of-type(3):before
+		{
+		content: "Length:";
+		}
+
+	td.data_cell:nth-of-type(4):before,
+	td.label_cell:nth-of-type(4):before
+		{
+		content: "Horsepower:";
+		}
+
+	td.data_cell:nth-of-type(5):before,
+	td.label_cell:nth-of-type(5):before
+		{
+		content: "Fuel Type:";
+		}
+
+	td.data_cell:nth-of-type(6):before,
+	td.label_cell:nth-of-type(6):before
+		{
+		content: "Registration Date:";
+		}
+	}

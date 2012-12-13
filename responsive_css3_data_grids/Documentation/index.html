@@ -1,0 +1,610 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+    <head>
+
+        <title>Responsive CSS3 Data Grids</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        
+        <link rel="stylesheet" type="text/css" href="style/jquery-ui/smoothness/jquery-ui.css"/> 
+        <link rel="stylesheet" type="text/css" href="style/base.css"/> 
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cuprum"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+
+        <script type="text/javascript" src="script/jquery.min.js"></script>
+        <script type="text/javascript" src="script/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="script/main.js"></script>
+
+    </head>
+    
+    <body>
+    
+        <div class="main clear-fix overflow-fix box-center">
+            
+            <div class="header clear-fix overflow-fix">
+                
+                <div class="layout-50-left">
+                    <a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs" class="header-logo"></a>
+                </div>
+                
+                <div class="layout-50-right">
+                    
+                    <ul class="no-list header-menu">
+                        <li><a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs" class="header-menu-contact-us">Contact us</a></li>
+                        <li><a href="http://twitter.com/QuanticaLabs" class="header-menu-twitter"></a></li>
+                        <li><a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs" class="header-menu-envato"></a></li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="content">
+                
+                <div class="tabs">
+                    
+                    <ul>
+                        <li><a href="#tab-1">About</a></li>
+                        <li><a href="#tab-2">Files Structure</a></li>
+                        <li><a href="#tab-3">Implementation</a></li>
+						<li><a href="#tab-4">HTML Structure</a></li>
+                        <li><a href="#tab-5">Customization</a></li>
+						<li><a href="#tab-6">Version history</a></li>
+                        <li><a href="#tab-7">Support</a></li>
+                    </ul>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-1">
+                        <h1>About</h1>      
+                        <p>
+							Responsive CSS3 Data Grids are used to present typical tabular data. Their advantages over the standard table are expandable rows in a form of drop down accordion sections, ability to highlight individual rows, hovers, table cell and headings tooltips. In addition the table is fully responsive and adapts well to the resolution of mobile devices like ipad or iphone by grouping the data into rows. Additional drop down panel allows to show / hide selected columns for easier data comparison.
+                        </p>
+						<ul class="documentation">
+                            <li>Pure CSS3 + HTML</li>
+							<li>Responsive Layout</li>
+                            <li>IE8 JS Fallback</li>
+                            <li>Expandable Rows</li>
+							<li>Ability To Expand Multiple Rows At Once</li>
+							<li>Ability To Expand Only One Row At Once</li>
+							<li>Ability To Expand Selected Rows By Default At Startup</li>
+							<li>Ability to Highlight Single Table Row</li>
+							<li>Hover States</li>
+							<li>Columns Filtering</li>
+                            <li>CSS3 Tooltips</li>
+							<li>4 Color Styles</li>
+                            <li>Valid XHTML Code</li>
+                            <li>Documentation Included</li>
+						</ul>
+                    </div>
+                    
+                    <!-- #### -->
+
+                    <div id="tab-2">
+                        <h1>Files Structure</h1>
+						<h4>CSS Files</h4>
+						<p>Responsive CSS3 Data Grids uses style sheets described below:</p>
+						<ul class="documentation">
+							<li><span class="name">data_grids_main.css</span> - primary style sheet describing the table,</li>
+							<li><span class="name">data_grids_tooltip.css</span> - style sheet for tooltips,</li>
+							<li><span class="name">data_grids_style_01.css - data_grids_style_04.css</span> - style sheets with color versions,</li>
+							<li><span class="name">page.css</span> - additional css file describing the page (not directly associated with the tables).</li>
+						</ul>						
+						<p>All CSS files are located in <span class="name">/styles</span> directory.</p>
+						
+						<br/><h4>JS Files</h4>
+						<p>Responsive CSS3 Data Grids uses some JS files only for IE8 fallback compatibility:</p>
+						<ul class="documentation">
+							<li><span class="name">jquery-1.7.2.min.js</span> - javascript library for selectivizr,</li>
+							<li><span class="name">selectivizr.js</span> - utility that emulates CSS3 pseudo-classes and attribute selectors in IE6-8.</li>
+						</ul>
+						<p>All JS files are located in <span class="name">/js</span> directory.</p>
+						
+						<br/><h4>HTML Documents</h4>
+						<ul class="documentation">
+							<li><span class="name">style_01.html</span> - main file with data grids implemented - color style 01,</li>
+							<li><span class="name">style_02.html</span> - main file with data grids implemented - color style 02,</li>
+							<li><span class="name">style_03.html</span> - main file with data grids implemented - color style 03,</li>
+							<li><span class="name">style_04.html</span> - main file with data grids implemented - color style 04,</li>
+							<li><span class="name">example_01.html</span> - example with row expanded by default at startup,</li>
+							<li><span class="name">example_02.html</span> - example with row highlighted by default,</li>
+							<li><span class="name">example_03.html</span> - example table with ability to expand only one row at once,</li>
+							<li><span class="name">example_04.html</span> - example table with different styling for first column.</li>
+						</ul>
+						<p>All HTML documents are located in <span class="name">home</span> directory.</p>
+						
+                    </div>
+					
+						
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-3">
+                        <h1>Implementation</h1>
+						<h4>Document Head</h4>
+						<p>First, attach the external CSS files to your HTML document. Note that you can use data_grids_style_01.css to data_grids_style_04.css for different color versions:</p>
+						
+<pre class="code">
+&lt;link rel="stylesheet" type="text/css" href="styles/data_grids_main.css"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="styles/data_grids_style_01.css"/&gt;
+&lt;link rel="stylesheet" type="text/css" href="styles/data_grids_tooltip.css"/&gt;
+</pre>
+						
+						<p>Next, attach some JS files for IE8 fallback compatibility:</p>
+						
+<pre class="code">
+&lt;!--[if (gte IE 6)&(lte IE 8)]&gt;
+&lt;script type="text/javascript" src="js/jquery-1.7.2.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/selectivizr.js"&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;link rel="stylesheet" href="styles/data_grids_main.css"/&gt;&lt;/noscript&gt;
+&lt;![endif]--&gt;
+</pre>
+
+						<br/><h4>Document Body</h4>
+						<p>Open style_01.html file or one of other example html documents from home directory and copy the entire content between:</p>
+						
+<pre class="code">
+&lt;!-- CSS3 Data Grids --&gt;
+...
+&lt;!-- /CSS3 Data Grids --&gt;
+</pre>
+
+						<p>then paste it to your HTML document.</p>
+                    </div>
+					
+					<!-- #### -->
+					
+                    <div id="tab-4">
+                        <h1>HTML Structure</h1>
+						<p>Responsive CSS3 Data Grids are divided into the following sections:</p>
+						<h4>Columns filtering controls</h4>
+						<p>Optional section for column filtering associated with table filter panel. You can delete this section if you don't use the filtering:</p>
+						
+<pre class="code">
+&lt;input id="col1" name="#" type="checkbox" /&gt;
+&lt;input id="col2" name="#" type="checkbox" /&gt;
+&lt;input id="col3" name="#" type="checkbox" /&gt;
+&lt;input id="col4" name="#" type="checkbox" /&gt;
+&lt;input id="col5" name="#" type="checkbox" /&gt;
+&lt;input id="col6" name="#" type="checkbox" /&gt;
+&lt;input id="col7" name="#" type="checkbox" /&gt;
+</pre>
+						<p>If you use a filtering, make sure that number of inputs match number of table columns.</p>
+						<br/><h4>Table Header</h4>
+						<p>Table header section with header label and table filter button and panel. Please pay attention to some important details:</p>
+						<ul class="documentation">
+							<li>Colspan attribute must match number of table columns.</li>
+						</ul>
+						
+<pre class="code">
+&lt;thead&gt;
+	&lt;tr class="header_row"&gt;
+		&lt;td colspan="<span>7</span>" class="header_cell"&gt;
+			&lt;h2 class="table_header"&gt;Yachts for Sale&lt;/h2&gt; &lt;!-- header label --&gt;
+							
+			<span>&lt;!-- table column filtering panel (optional) --&gt;</span>
+			&lt;label for="table_config" class="table_config"&gt;Table Filter&lt;/label&gt; &lt;!-- button label --&gt;
+			&lt;input id="table_config" name="#" type="checkbox" /&gt;
+			&lt;div class="table_config"&gt;
+				&lt;h3 class="table_config"&gt;Active columns&lt;/h3&gt; &lt;!-- panel header --&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;label for="col1"&gt;Model&lt;/label&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;label for="col2"&gt;Price&lt;/label&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;label for="col3"&gt;Length&lt;/label&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;label for="col4"&gt;Horsepower&lt;/label&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;label for="col5"&gt;Fuel Type&lt;/label&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;label for="col6"&gt;Registration Date&lt;/label&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;label for="col7"&gt;Action&lt;/label&gt;&lt;/li&gt;
+				&lt;/ul&gt;			
+			&lt;/div&gt;
+			<span>&lt;!-- / --&gt;</span>
+							
+		&lt;/td&gt;
+	&lt;/tr&gt;	
+&lt;/thead&gt;
+</pre>
+
+						<p>You can delete section between:</p>
+
+<pre class="code">
+&lt;!-- table column filtering panel (optional) --&gt;
+...
+&lt;!-- / --&gt;
+</pre>
+						
+						<p>if you don't use the filtering.</p>
+						<br/><h4>Table Subheader</h4>
+						<p>Section with column labels. You can define columns width here adding e.g.: width="25%" immediately after td tag.</p>
+						
+<pre class="code">
+&lt;!-- SUBHEADER --&gt;
+&lt;!-- define optional columns width here --&gt;
+&lt;tr class="subheader_row"&gt;
+	&lt;td class="subheader_cell"&gt;Model&lt;/td&gt;
+	&lt;td class="subheader_cell"&gt;Price&lt;/td&gt;
+	&lt;td class="subheader_cell"&gt;Length&lt;/td&gt;
+	&lt;td class="subheader_cell"&gt;Horsepower&lt;/td&gt;
+	&lt;td class="subheader_cell"&gt;Fuel Type&lt;/td&gt;
+	&lt;td class="subheader_cell"&gt;Registration Date&lt;/td&gt;
+	&lt;td class="subheader_cell"&gt;Action&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- / --&gt;
+</pre>
+
+					<br/><h4>Table Row</h4>
+					<p>Single table row is presented below. Please pay attention to some important details:</p>
+					<ul class="documentation">
+						<li>You can use two classes - <span class="name">data_odd</span> or <span class="name">data_even</span> for zebra striped rows, use them alternatively,</li>
+						<li>You can use <span class="name">label_cell</span> class instead of <span class="name">data_cell</span> for different cell decoration,</li>
+                        <li>Colspan attribute must match number of table columns,</li>
+						<li><span class="name">Label for</span> must match <span class="name">input id</span> and both must match the row number e.g.: <span class="name">Label for="row_2"</span>, <span class="name">input id="row_2"</span>.</li>
+					</ul>
+					
+<pre class="code">
+&lt;!-- <span>ROW 1</span> --&gt;
+&lt;tr class="<span>data_odd</span>"&gt;
+	&lt;td class="<span>label_cell</span>"&gt;PRi240&lt;/td&gt;
+	&lt;td class="<span>data_cell</span>"&gt;$2,850,000.00&lt;/td&gt;
+	&lt;td class="data_cell"&gt;14.00 m&lt;/td&gt;
+	&lt;td class="data_cell"&gt;250 hp&lt;/td&gt;
+	&lt;td class="data_cell"&gt;Diesel&lt;/td&gt;
+	&lt;td class="data_cell"&gt;05 / 2004&lt;/td&gt;
+	&lt;td class="data_cell"&gt;&lt;label for="<span>row_1</span>"&gt;Details&lt;/label&gt;&lt;div style="margin-left: 5px;" class="grid_button"&gt;Buy Now&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- expandable section --&gt;
+&lt;tr class="expanded"&gt;
+	&lt;td colspan="<span>7</span>"&gt;
+		&lt;input id="<span>row_1</span>" name="#" type="checkbox" /&gt;
+		&lt;div class="expanded"&gt;
+			&lt;div class="column_100"&gt;
+				&lt;h3 class="expanded_header"&gt;Features&lt;/h3&gt;
+				&lt;p&gt;Expanded dolor silhuette velix.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- / --&gt;
+</pre>
+					</div>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-5">
+                        <h1>Customization</h1>
+						<h4>Adding a new table row</h4>
+						<p>New or modified code snippets highlighted in yellow below:<p>
+						
+<pre class="code">
+		&lt;!-- ROW 5 --&gt;
+		&lt;tr class="data_odd"&gt;
+			&lt;td class="data_cell"&gt;PRi750&lt;/td&gt;
+			&lt;td class="data_cell"&gt;$3,335,000.00&lt;/td&gt;
+			&lt;td class="data_cell"&gt;22.00 m&lt;/td&gt;
+			&lt;td class="data_cell"&gt;500 hp&lt;/td&gt;
+			&lt;td class="data_cell"&gt;Diesel&lt;/td&gt;
+			&lt;td class="data_cell"&gt;10 / 2008&lt;/td&gt;
+			&lt;td class="data_cell"&gt;&lt;label for="row_5"&gt;Details&lt;/label&gt;&lt;div style="margin-left: 5px;" class="grid_button"&gt;Buy Now&lt;/div&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;!-- expandable section --&gt;
+		&lt;tr class="expanded"&gt;
+			&lt;td colspan="7"&gt;
+				&lt;input id="row_5" name="#" type="checkbox" /&gt;
+				&lt;div class="expanded"&gt;
+					&lt;div class="column_100"&gt;
+						&lt;h4 class="expanded_header"&gt;Features&lt;/h4&gt;
+						&lt;ul&gt;
+							&lt;li&gt;Hull engine&lt;span class="right"&gt;Two&lt;/span&gt;&lt;/li&gt;
+							&lt;li&gt;Hull engine&lt;span class="right"&gt;Two&lt;/span&gt;&lt;/li&gt;
+							&lt;li&gt;Hull engine&lt;span class="right"&gt;Two&lt;/span&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;!-- / --&gt;
+		
+		<span>&lt;!-- ROW 6 --&gt;</span>
+		<span>&lt;tr class="data_even"&gt;</span>
+			<span>&lt;td class="data_cell"&gt;PRi750&lt;/td&gt;</span>
+			<span>&lt;td class="data_cell"&gt;$3,335,000.00&lt;/td&gt;</span>
+			<span>&lt;td class="data_cell"&gt;22.00 m&lt;/td&gt;</span>
+			<span>&lt;td class="data_cell"&gt;500 hp&lt;/td&gt;</span>
+			<span>&lt;td class="data_cell"&gt;Diesel&lt;/td&gt;</span>
+			<span>&lt;td class="data_cell"&gt;10 / 2008&lt;/td&gt;</span>
+			<span>&lt;td class="data_cell"&gt;&lt;label for="row_6"&gt;Details&lt;/label&gt;&lt;div style="margin-left: 5px;" class="grid_button"&gt;Buy Now&lt;/div&gt;&lt;/td&gt;</span>
+		<span>&lt;/tr&gt;</span>
+		<span>&lt;!-- expandable section --&gt;</span>
+		<span>&lt;tr class="expanded"&gt;</span>
+			<span>&lt;td colspan="7"&gt;</span>
+				<span>&lt;input id="row_6" name="#" type="checkbox" /&gt;</span>
+				<span>&lt;div class="expanded"&gt;</span>
+					<span>&lt;div class="column_100"&gt;</span>
+						<span>&lt;h4 class="expanded_header"&gt;Features&lt;/h4&gt;</span>
+						<span>&lt;ul&gt;</span>
+							<span>&lt;li&gt;Hull engine&lt;span class="right"&gt;Two&lt;/span&gt;&lt;/li&gt;</span>
+							<span>&lt;li&gt;Hull engine&lt;span class="right"&gt;Two&lt;/span&gt;&lt;/li&gt;</span>
+							<span>&lt;li&gt;Hull engine&lt;span class="right"&gt;Two&lt;/span&gt;&lt;/li&gt;</span>
+						<span>&lt;/ul&gt;</span>
+					<span>&lt;/div&gt;</span>
+				<span>&lt;/div&gt;</span>
+			<span>&lt;/td&gt;</span>
+		<span>&lt;/tr&gt;</span>
+		<span>&lt;!-- / --&gt;</span>
+
+	&lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+
+						<br/><h4>Adding a new table column</h4>
+						<p>New or modified code snippets highlighted in yellow below:<p>
+						
+<pre class="code">
+&lt;!-- CSS3 Data Grids --&gt;
+&lt;input id="col1" name="#" type="checkbox" /&gt;
+&lt;input id="col2" name="#" type="checkbox" /&gt;
+&lt;input id="col3" name="#" type="checkbox" /&gt;
+&lt;input id="col4" name="#" type="checkbox" /&gt;
+&lt;input id="col5" name="#" type="checkbox" /&gt;
+&lt;input id="col6" name="#" type="checkbox" /&gt;
+&lt;input id="col7" name="#" type="checkbox" /&gt;
+<span>&lt;input id="col8" name="#" type="checkbox" /&gt;</span>
+
+&lt;table class="qlabs_grid_container"&gt;
+
+	&lt;!-- TABLE HEADER --&gt;
+	&lt;thead&gt;
+		&lt;tr class="header_row"&gt;
+			&lt;td colspan="<span>8</span>" class="header_cell"&gt;
+				&lt;h2 class="table_header"&gt;Yachts for Sale&lt;/h2&gt; &lt;!-- header label --&gt;
+				
+				&lt;!-- table column filtering panel (optional) --&gt;
+				&lt;label for="table_config" class="table_config"&gt;Table Filter&lt;/label&gt; &lt;!-- button label --&gt;
+				&lt;input id="table_config" name="#" type="checkbox" /&gt;
+				&lt;div class="table_config"&gt;
+					&lt;h3 class="table_config"&gt;Active columns&lt;/h3&gt; &lt;!-- panel header --&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;label for="col1"&gt;Model&lt;/label&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;label for="col2"&gt;Price&lt;/label&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;label for="col3"&gt;Length&lt;/label&gt;&lt;/li&gt;
+						<span>&lt;li&gt;&lt;label for="col4"&gt;Hull&lt;/label&gt;&lt;/li&gt;</span>
+						&lt;li&gt;&lt;label for="col5"&gt;Horsepower&lt;/label&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;label for="col6"&gt;Fuel Type&lt;/label&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;label for="col7"&gt;Registration Date&lt;/label&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;label for="col8"&gt;Action&lt;/label&gt;&lt;/li&gt;
+					&lt;/ul&gt;			
+				&lt;/div&gt;
+				&lt;!-- / --&gt;
+				
+			&lt;/td&gt;
+		&lt;/tr&gt;	
+	&lt;/thead&gt;
+
+	&lt;!-- TABLE BODY --&gt;
+	&lt;tbody class="data_container"&gt;
+	
+		&lt;!-- SUBHEADER --&gt;
+		&lt;!-- define optional columns width here --&gt;
+		&lt;tr class="subheader_row"&gt;
+			&lt;td class="subheader_cell"&gt;Model&lt;/td&gt;
+			&lt;td class="subheader_cell"&gt;Price&lt;/td&gt;
+			&lt;td class="subheader_cell"&gt;Length&lt;/td&gt;
+			<span>&lt;td class="subheader_cell"&gt;Hull&lt;/td&gt;</span>
+			&lt;td class="subheader_cell"&gt;Horsepower&lt;/td&gt;
+			&lt;td class="subheader_cell"&gt;Fuel Type&lt;/td&gt;
+			&lt;td class="subheader_cell"&gt;Registration Date&lt;/td&gt;
+			&lt;td class="subheader_cell"&gt;Action&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;!-- / --&gt;
+
+		&lt;!-- ROW 1 --&gt;
+		&lt;tr class="data_odd"&gt;
+			&lt;td class="data_cell"&gt;PRi240&lt;/td&gt;
+			&lt;td class="data_cell"&gt;$2,850,000.00&lt;/td&gt;
+			&lt;td class="data_cell"&gt;14.00 m&lt;/td&gt;
+			<span>&lt;td class="data_cell"&gt;Carbon&lt;/td&gt;</span>
+			&lt;td class="data_cell"&gt;250 hp&lt;/td&gt;
+			&lt;td class="data_cell"&gt;Diesel&lt;/td&gt;
+			&lt;td class="data_cell"&gt;05 / 2004&lt;/td&gt;
+			&lt;td class="data_cell"&gt;&lt;label for="row_1"&gt;Details&lt;/label&gt;&lt;div style="margin-left: 5px;" class="grid_button"&gt;Buy Now&lt;/div&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;!-- expandable section --&gt;
+		&lt;tr class="expanded"&gt;
+			&lt;td colspan="<span>8</span>"&gt;
+				&lt;input id="row_1" name="#" type="checkbox" /&gt;
+				&lt;div class="expanded"&gt;
+					&lt;div class="column_100"&gt;
+						&lt;h3 class="expanded_header"&gt;Features&lt;/h3&gt;
+						&lt;p&gt;Expanded dolor silhuette velix.&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;!-- / --&gt;
+
+		&lt;!-- ROW 2 --&gt;
+		&lt;tr class="data_even"&gt;
+			&lt;td class="data_cell"&gt;PRi270&lt;/td&gt;
+			&lt;td class="data_cell"&gt;$2,315,000.00&lt;/td&gt;
+			&lt;td class="data_cell"&gt;15.00 m&lt;/td&gt;
+			<span>&lt;td class="data_cell"&gt;Carbon&lt;/td&gt;</span>
+			&lt;td class="data_cell"&gt;280 hp&lt;/td&gt;
+			&lt;td class="data_cell"&gt;Diesel&lt;/td&gt;
+			&lt;td class="data_cell"&gt;08 / 2005&lt;/td&gt;
+			&lt;td class="data_cell"&gt;&lt;label for="row_2"&gt;Details&lt;/label&gt;&lt;div style="margin-left: 5px;" class="grid_button"&gt;Buy Now&lt;/div&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;!-- expandable section --&gt;
+		&lt;tr class="expanded"&gt;
+			&lt;td colspan="<span>8</span>"&gt;
+				&lt;input id="row_2" name="#" type="checkbox" /&gt;
+				&lt;div class="expanded"&gt;
+					&lt;div class="column_100"&gt;
+						&lt;h3 class="expanded_header"&gt;Features&lt;/h3&gt;
+						&lt;p&gt;Expanded dolor silhuette velix.&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;!-- / --&gt;
+
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- /CSS3 Data Grids --&gt;
+</pre>
+
+						<br/><h4>Highlighting a table row</h4>
+						<p>New or modified code snippets highlighted in yellow below:<p>
+						
+<pre class="code">
+&lt;!-- ROW 2 --&gt;
+&lt;tr class="data_even <span>highlighted</span>"&gt;
+	&lt;td class="data_cell"&gt;PRi270&lt;/td&gt;
+	&lt;td class="data_cell"&gt;$2,315,000.00&lt;/td&gt;
+	&lt;td class="data_cell"&gt;15.00 m&lt;/td&gt;
+	&lt;td class="data_cell"&gt;280 hp&lt;/td&gt;
+	&lt;td class="data_cell"&gt;Diesel&lt;/td&gt;
+	&lt;td class="data_cell"&gt;08 / 2005&lt;/td&gt;
+	&lt;td class="data_cell"&gt;&lt;label for="row_2"&gt;Details&lt;/label&gt;&lt;div style="margin-left: 5px;" class="grid_button"&gt;Buy Now&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- expandable section --&gt;
+&lt;tr class="expanded"&gt;
+	&lt;td colspan="7"&gt;
+		&lt;input id="row_2" name="#" type="checkbox" /&gt;
+		&lt;div class="expanded"&gt;
+			&lt;div class="column_100"&gt;
+				&lt;h3 class="expanded_header"&gt;Features&lt;/h3&gt;
+				&lt;p&gt;Expanded dolor silhuette velix.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- / --&gt;
+</pre>
+
+						<br/><h4>Adding table cell tooltip</h4>
+						<p>New or modified code snippets highlighted in yellow below:<p>
+						
+<pre class="code">
+&lt;!-- ROW 2 --&gt;
+&lt;tr class="data_even"&gt;
+	&lt;td class="data_cell"&gt;PRi270&lt;/td&gt;
+	&lt;td class="data_cell"&gt;$2,315,000.00&lt;/td&gt;
+	&lt;td class="data_cell"&gt;15.00 m&lt;/td&gt;
+	&lt;td class="data_cell"&gt;280 hp<span>&lt;div class="qlabs_tooltip"&gt;i&lt;span&gt;&lt;strong&gt;280 hp&lt;/strong&gt;This tooltip is positioned above a hovered item.&lt;/span&gt;&lt;/div&gt;</span>&lt;/td&gt;
+	&lt;td class="data_cell"&gt;Diesel&lt;/td&gt;
+	&lt;td class="data_cell"&gt;08 / 2005&lt;/td&gt;
+	&lt;td class="data_cell"&gt;&lt;label for="row_2"&gt;Details&lt;/label&gt;&lt;div style="margin-left: 5px;" class="grid_button"&gt;Buy Now&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- expandable section --&gt;
+&lt;tr class="expanded"&gt;
+	&lt;td colspan="7"&gt;
+		&lt;input id="row_2" name="#" type="checkbox" /&gt;
+		&lt;div class="expanded"&gt;
+			&lt;div class="column_100"&gt;
+				&lt;h3 class="expanded_header"&gt;Features&lt;/h3&gt;
+				&lt;p&gt;Expanded dolor silhuette velix.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- / --&gt;
+</pre>
+
+						<br/><h4>Expanding selected row by default at startup</h4>
+						<p>New or modified code snippets highlighted in yellow below:<p>
+						
+<pre class="code">
+&lt;!-- ROW 2 --&gt;
+&lt;tr class="data_even"&gt;
+	&lt;td class="data_cell"&gt;PRi270&lt;/td&gt;
+	&lt;td class="data_cell"&gt;$2,315,000.00&lt;/td&gt;
+	&lt;td class="data_cell"&gt;15.00 m&lt;/td&gt;
+	&lt;td class="data_cell"&gt;280 hp&lt;/td&gt;
+	&lt;td class="data_cell"&gt;Diesel&lt;/td&gt;
+	&lt;td class="data_cell"&gt;08 / 2005&lt;/td&gt;
+	&lt;td class="data_cell"&gt;&lt;label for="row_2"&gt;Details&lt;/label&gt;&lt;div style="margin-left: 5px;" class="grid_button"&gt;Buy Now&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- expandable section --&gt;
+&lt;tr class="expanded"&gt;
+	&lt;td colspan="7"&gt;
+		&lt;input id="row_2" name="#" type="checkbox" <span>checked="checked"</span> /&gt;
+		&lt;div class="expanded"&gt;
+			&lt;div class="column_100"&gt;
+				&lt;h3 class="expanded_header"&gt;Features&lt;/h3&gt;
+				&lt;p&gt;Expanded dolor silhuette velix.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- / --&gt;
+</pre>
+
+						<br/><h4>Expanding only one row at once</h4>
+						<p>New or modified code snippets highlighted in yellow below, this change applies to all rows of the table:<p>
+						
+<pre class="code">
+&lt;!-- ROW 2 --&gt;
+&lt;tr class="data_even"&gt;
+	&lt;td class="data_cell"&gt;PRi270&lt;/td&gt;
+	&lt;td class="data_cell"&gt;$2,315,000.00&lt;/td&gt;
+	&lt;td class="data_cell"&gt;15.00 m&lt;/td&gt;
+	&lt;td class="data_cell"&gt;280 hp&lt;/td&gt;
+	&lt;td class="data_cell"&gt;Diesel&lt;/td&gt;
+	&lt;td class="data_cell"&gt;08 / 2005&lt;/td&gt;
+	&lt;td class="data_cell"&gt;&lt;label for="row_2"&gt;Details&lt;/label&gt;&lt;div style="margin-left: 5px;" class="grid_button"&gt;Buy Now&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- expandable section --&gt;
+&lt;tr class="expanded"&gt;
+	&lt;td colspan="7"&gt;
+		&lt;input id="row_2" name="#" <span>type="radio"</span> /&gt;
+		&lt;div class="expanded"&gt;
+			&lt;div class="column_100"&gt;
+				&lt;h3 class="expanded_header"&gt;Features&lt;/h3&gt;
+				&lt;p&gt;Expanded dolor silhuette velix.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;
+&lt;!-- / --&gt;
+</pre>
+
+						<br/><h4>Adjusting the height of drop down section</h4>
+						<p>Open <span class="name">data_grids_main.css</span> file, find <span class="name">/* Expandable section height */</span> label and change height to desired value.<p>
+
+                    </div>
+					
+					<!-- #### -->
+					
+                    <div id="tab-6">
+                        <h1>Version history</h1>
+						<p><b>27 June 2012</b>, ver. 1.0, First release</p>
+					</div>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-7">
+                        <h1>Support</h1>
+                        If you have any questions, please use our profile contact form on Envato (<a href="http://themeforest.net/user/QuanticaLabs">http://themeforest.net/user/QuanticaLabs</a>).<br/> 
+                        We aim to answer all questions within <strong>24 hours</strong>. In some cases the waiting time can be extended to <strong>48 hours</strong>.
+                    </div>
+                
+                </div>                
+                
+            </div>
+            
+            <div class="footer">
+                <a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs">&copy; 2012 QuanticaLabs</a>
+            </div>
+            
+        </div>
+        
+        <div>
+        
+            <input type="hidden" id="open-tabs" value="1" />
+        
+        </div>
+        
+    </body>
+    
+</html>

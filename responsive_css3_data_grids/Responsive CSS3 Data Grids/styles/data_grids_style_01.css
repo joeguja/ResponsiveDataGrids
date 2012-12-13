@@ -1,0 +1,69 @@
+/*
+Responsive CSS3 Data Grids v1.0 (06.2012)
+Copyright 2012 QuanticaLabs
+www.quanticalabs.com
+*/
+
+/* ==================== TABLE ROW HOVER ==================== */
+	
+/* --- Row Hover --- */
+table.qlabs_grid_container tbody.data_container tr.data_even:hover,
+table.qlabs_grid_container tbody.data_container tr.data_odd:hover
+	{
+	background: #ffecc0;
+	color: #000000;
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+	}
+	
+/* --- Cell Hover --- */	
+table.qlabs_grid_container tbody.data_container tr.data_even:hover td.data_cell,
+table.qlabs_grid_container tbody.data_container tr.data_odd:hover td.data_cell
+	{
+	border-left: 1px solid #ffdb90;
+	}
+
+/* --- Label, Button, Tooltip Button - Hover And Highlight --- */
+table.qlabs_grid_container tbody.data_container tr.data_even:hover td.data_cell label,
+table.qlabs_grid_container tbody.data_container tr.data_odd:hover td.data_cell label,
+table.qlabs_grid_container tbody.data_container tr.highlighted td.data_cell label,
+table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell.highlighted label,
+table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell.highlighted label,
+table.qlabs_grid_container tbody.data_container tr.data_even:hover td.data_cell div.grid_button,
+table.qlabs_grid_container tbody.data_container tr.data_odd:hover td.data_cell div.grid_button,
+table.qlabs_grid_container tbody.data_container tr.highlighted td.data_cell div.grid_button,
+table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell.highlighted div.grid_button,
+table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell.highlighted div.grid_button,
+table.qlabs_grid_container tbody.data_container tr.subheader_row td.subheader_cell div.qlabs_tooltip:hover,
+table.qlabs_grid_container tbody.data_container tr.data_even:hover td.data_cell div.qlabs_tooltip,
+table.qlabs_grid_container tbody.data_container tr.data_odd:hover td.data_cell div.qlabs_tooltip,
+table.qlabs_grid_container tbody.data_container tr.highlighted td.data_cell div.qlabs_tooltip,
+table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell.highlighted div.qlabs_tooltip,
+table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell.highlighted div.qlabs_tooltip
+	{
+	background: #de5100; /* Old browsers */
+	background: -moz-linear-gradient(top,  #de5100 0%, #d33600 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#de5100), color-stop(100%,#d33600)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #de5100 0%,#d33600 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #de5100 0%,#d33600 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #de5100 0%,#d33600 100%) !important; /* IE10+ */
+	background: linear-gradient(top,  #de5100 0%,#d33600 100%) !important; /* W3C */
+	border: 1px solid #d33600;
+	}
+
+/* ==================== HIGHLIGHTS ==================== */
+
+/* --- Row And Cell Highlights --- */
+table.qlabs_grid_container tbody.data_container tr.highlighted,
+table.qlabs_grid_container tbody.data_container tr.data_even td.data_cell.highlighted,
+table.qlabs_grid_container tbody.data_container tr.data_odd td.data_cell.highlighted
+	{
+	background: #ffe19a;
+	color: #000000;
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.5);
+	}
+	
+/* --- Cell Highlight --- */	
+table.qlabs_grid_container tbody.data_container tr.highlighted td.data_cell
+	{
+	border-left: 1px solid #ffd074;
+	}
